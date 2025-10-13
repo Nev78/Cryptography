@@ -1,10 +1,10 @@
-=== Відкритий ключ підпису Боба (PEM) ===
+=== Bob's public signing key (PEM) ===
 -----BEGIN PUBLIC KEY-----
-MFYwEAYHKoZIzj0CAQYFK4EEAAoDQgAEBOCXE3MwMHN0rJGMdvlqFS6xwRDJkdm2
-hH368Wn0ZLYIEnnZvThTjwhKJ7FAIcVYXuxm5YiLLtiR4gGIilgbLA==
+MFYwEAYHKoZIzj0CAQYFK4EEAAoDQgAEgyt3Z0opiJMqIBgH2W7DGVv2AbcoyPI2
+Z1vgnfBUoFXOArg3bmS/RXXAtnarCj8fm0I/T6TX7WUWAK2TjR38GQ==
 -----END PUBLIC KEY-----
 
-=== Відкритий ключ ECDH Боба (hex) ===
-ebcb25aa44789c9ac82d0794acb9c33bb691cbc9de011e8b9c9bcced484d3874
-=== Підпис відкритого ключа ECDH Боба (hex) ===
-3045022100e1592564dd8d890153af01a778f0cdbcffc391fa98dc8db4d239b358fb2c66be02200859c6721dbf8b4b004cfbc54c7eb69857b5f55a803a37f9de0be96934708863
+=== Bob's ECDH public key (hex) ===
+1e92e1a2986d2668068ebcc0b3eafa59eab9442f1c28f1240d1c2aa18c0cb70d
+=== Bob's ECDH public key signature (hex) ===
+30450220713fc188dcb0f25f80c955b0e7c16af2aa63af1285c427275bd7513de2ab79530221008a9d0576e06ebbd10a391a17778e341d72d9753298d75c63b96b6e7c6850a1f0

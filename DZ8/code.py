@@ -28,9 +28,9 @@ try:
         alice_x_pub_key,
         ec.ECDSA(hashes.SHA256())
     )
-    print("Підпис Alice перевірено успішно ")
+    print("Alice's signature was verified successfully. ")
 except InvalidSignature:
-    print("Підпис Alice недійсний ")
+    print("Alice's signature is invalid. ")
 
 bob_ecdh_pub_bytes = bob_ecdh_public_key.public_bytes(
     serialization.Encoding.Raw,
@@ -47,15 +47,15 @@ bob_sign_pub_pem = bob_sign_public_key.public_bytes(
     serialization.PublicFormat.SubjectPublicKeyInfo
 )
 
-print("\n=== Результати для відправки Alice ===")
-print(" Відкритий ключ підпису Боба (PEM):\n", bob_sign_pub_pem.decode())
-print(" Відкритий ключ ECDH Боба (hex):", hexlify(bob_ecdh_pub_bytes).decode())
-print(" Підпис відкритого ключа ECDH Боба (hex):", hexlify(bob_signature).decode())
+print("\n=== Results for sending Alice ===")
+print(" Bob's public signing key (PEM):\n", bob_sign_pub_pem.decode())
+print(" Bob's ECDH public key (hex):", hexlify(bob_ecdh_pub_bytes).decode())
+print(" Bob's ECDH public key signature (hex):", hexlify(bob_signature).decode())
 
 with open("bob_keys.txt", "w") as f:
-    f.write("=== Відкритий ключ підпису Боба (PEM) ===\n")
+    f.write("=== Bob's public signing key (PEM) ===\n")
     f.write(bob_sign_pub_pem.decode())
-    f.write("\n=== Відкритий ключ ECDH Боба (hex) ===\n")
+    f.write("\n=== Bob's ECDH public key (hex) ===\n")
     f.write(hexlify(bob_ecdh_pub_bytes).decode())
-    f.write("\n=== Підпис відкритого ключа ECDH Боба (hex) ===\n")
+    f.write("\n=== Bob's ECDH public key signature (hex) ===\n")
     f.write(hexlify(bob_signature).decode())
