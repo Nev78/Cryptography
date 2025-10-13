@@ -1,0 +1,10 @@
+=== Відкритий ключ підпису Боба (PEM) ===
+-----BEGIN PUBLIC KEY-----
+MFYwEAYHKoZIzj0CAQYFK4EEAAoDQgAEBOCXE3MwMHN0rJGMdvlqFS6xwRDJkdm2
+hH368Wn0ZLYIEnnZvThTjwhKJ7FAIcVYXuxm5YiLLtiR4gGIilgbLA==
+-----END PUBLIC KEY-----
+
+=== Відкритий ключ ECDH Боба (hex) ===
+ebcb25aa44789c9ac82d0794acb9c33bb691cbc9de011e8b9c9bcced484d3874
+=== Підпис відкритого ключа ECDH Боба (hex) ===
+3045022100e1592564dd8d890153af01a778f0cdbcffc391fa98dc8db4d239b358fb2c66be02200859c6721dbf8b4b004cfbc54c7eb69857b5f55a803a37f9de0be96934708863
