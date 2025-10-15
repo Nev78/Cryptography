@@ -197,7 +197,7 @@ def main():
                 _ = m.extract_number()
             parts = [m.extract_number() for _ in range(4)]
 
-        key_int = (parts[0] << 96) | (parts[1] << 64) | (parts[2] << 32) | parts[3]
+        key_int = (parts[3] << 96) | (parts[2] << 64) | (parts[1] << 32) | parts[0]
         key_bytes_le = key_int.to_bytes(16, byteorder="little")
 
         try:
